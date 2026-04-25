@@ -1,0 +1,26 @@
+[source]
+include_paths = []
+exclude_paths = [
+    "node_modules/",
+    "vendor/",
+    ".git/",
+    "dist/",
+    "build/"
+]
+
+[allowlist]
+Regexes = [
+    "cafebabe:deadbeef",
+    "AKIAIMNOJVGFDXXXE4OA",
+    "ghp_fake123",
+]
+
+Paths = [
+    "(?i)(.*?)(README|EXAMPLE|TEST)"
+]
+
+[[rules]]
+id = "gitleaks-all"
+description = "Gitleaks detects hardcoded secrets"
+secret = "(?i)(password|secret|token|api[_-]?key|aws[_-]?secret)"
+entropy = 3.5

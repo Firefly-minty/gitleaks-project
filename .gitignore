@@ -1,0 +1,39 @@
+# Virtual Environment
+venv/
+env/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+*.egg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Gitleaks output
+leaks.json
+gitleaks-report.json
+results.sarif
+
+# Backup files
+*.backup
+*.bak
+
+# Secrets
+.env
+.env.local
+secrets.txt
+config.py
+config.py
+config.py
